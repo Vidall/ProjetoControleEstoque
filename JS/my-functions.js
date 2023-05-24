@@ -98,6 +98,6 @@ function AtivarCamera() {
   );
 
   Quagga.onDetected(function (data) {
-    console.log(data)
+    document.querySelector("#codigo-barras-input").innerHTML = data.codeResult.code;
   })
 }
