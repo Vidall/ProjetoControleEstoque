@@ -78,7 +78,7 @@ function AtivarCamera() {
           target: document.querySelector("#icamera"), // Or '#yourElement' (optional)
         },
         decoder: {
-          readers: ["code_128_reader"],
+          readers: ["ean_reader"],
         },
       },
       function (err) {
