@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.corpo-saida {
+  background-color: rgba(0, 0, 0, 0.801);
+  border-radius: 5px;
+  margin-top: 117px;
+  
+  padding: 10px 10px 20px 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+  
+}
+
+.btn-saida {
+  margin-right: 25px;
+}
+#lista-opcoes option {
+  width: 200px;
+}
+#codigoBarras {
+  width: 350px;
+}
+
+#icamera {
+  display: none;
+  margin: auto;
+  height: 150px;
+}
+video {
+  margin: auto;
+  position: relative;
+  height: 150px;
+}
+canvas {
+  margin: auto;
+  height: 150px;
+}
+
+@media (max-width: 768px) {
+  .btn-saida {
+    margin-right: 5px;
+  }
+  #codigoBarras {
+    width: 200px;
+  }
+}
+
+#codigoBarras {
+  margin-top: 5px;
+  background-color: #fff;
+  height: 20px;
+  border-radius: 2px;
+}

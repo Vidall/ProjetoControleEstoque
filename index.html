@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="estilo/estiloGlobal.css" />
+    <link rel="stylesheet" href="estilo/estiloMobile.css" />
+    <link rel="stylesheet" href="estilo/estiloSaida.css" />
+
+    <title>Tela Inicial</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"
+          ><img src="imagens/logoSpeedLog.png" alt="logo SpeedLog"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Minha área</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Suporte</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sair</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container corpo" id="main">
+      <div class="row linha1">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div
+              param-link="form-saida.html"
+              param-destino=".corpo"
+              class="card-body"
+              onclick="navegarSaida()"
+            >
+              <h5 class="card-title">Saída</h5>
+              <p class="card-text">Registre a saída do produto no estoque.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            param-link="form-entrada.html"
+            param-destino=".corpo"
+            class="card mb-3"
+            onclick="navegarEntrada()"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Entrada</h5>
+              <p class="card-text">Conteúdo do bloco 2.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Registrar Produto</h5>
+              <p class="card-text">Registre aqui um novo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Bloco 4</h5>
+              <p class="card-text">Conteúdo do bloco 4.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-2 navegacao_rodape">
+      <div class="container">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"
+              ><img src="imagens/home.svg" alt="inicio" /><br />
+              Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="imagens/estoque.png" alt="estoque" /><br />
+              Estoque</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><img src="imagens/historico.png" alt="historico" /><br />
+              Histórico</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="quagga.min.js"></script>
+    <script src="JS/my-functions.js"></script>    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>

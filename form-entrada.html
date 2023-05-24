@@ -1,0 +1,43 @@
+<div>
+  <h1>Registro de Entrada</h1>
+  <button id="ativarCamera" onclick="AtivarCamera()"><img src="imagens/camera.svg" alt="camera"></button>
+  <div id="icamera"></div>  <!--a camera esta aqui-->
+  <form class="form-saida">
+    <div class="form-group">
+      <input type="text" id="codigo-barras-input" placeholder="Código de Barras">
+
+      <br />
+
+      <label for="produto">Produto:</label>
+      <input type="text" class="form-control" id="opcoes" list="lista-opcoes" />
+      <datalist id="lista-opcoes">
+        <option value="Malbec"></option>
+        <option value="Sabonete Natura"></option>
+        <option value="óleo"></option>
+      </datalist>
+    </div>
+    <div class="form-group">
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" class="form-control" id="quantidade" min="0" />
+    </div>
+    <div class="form-group">
+      <label for="formaPagamento">Forma de pagamento:</label>
+      <select class="form-control" id="formaPagamento">
+        <option value="">Selecione a forma de pagamento</option>
+        <option value="dinheiro">Dinheiro</option>
+        <option value="cartao">Cartão</option>
+        <option value="pix">PIX</option>
+      </select>
+    </div>
+    <button
+      type="button"
+      class="btn btn-secondary btn-saida"
+      onclick="voltar()"
+    >
+      Voltar
+    </button>
+    <button type="submit" class="btn btn-primary btn-saida">
+      Registrar Saída
+    </button>
+  </form>  
+</div>

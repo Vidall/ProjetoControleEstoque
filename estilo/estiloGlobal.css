@@ -1,0 +1,65 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*padrões*/
+body {
+    background-color: #b3dddf;
+    background-image: url(../imagens/fundo-navegacao-reduzida.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+:root {
+    --corPadrao1: #037171;
+    --corPadrao2: #00B9AE;
+    --corPadrao3: #02C3BD;
+    --corContraste1: #35281D;
+    --corContraste2: #9B7874;
+
+    --fonteDestaque: 'Roboto Mono', monospace;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;    
+}
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+.navegacao_rodape img{
+    width: 40px;
+    height: 40px;
+}
+
+.corpo { 
+    margin-top: 200px;   
+    min-height: calc(100% + 500px);
+    padding-top: 50px;
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 78vh;
+}
+
+.card-body {
+    color: #fff;
+    background-color: var(--corPadrao1);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px  rgba(0, 0, 0, 0.425);
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+
+

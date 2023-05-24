@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #b3dddf;
+    background-image: url(../imagens/fundo-navegacao-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+  header img {
+    width: 40px;
+    height: 40px;
+  }
+  .navegacao_rodape a {
+    margin: 0px;
+    padding: 0px;
+  }
+  .navegacao_rodape li {
+    margin: 10px;
+  }
+
+  .corpo {
+    margin-top: 20px;
+    min-height: calc(100% - 50px);
+    padding-top: 50px;
+  }
+
+  .corpo-saida {
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 5px;
+    margin-top: 85px;
+
+    padding-top: 5px;
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 63vh;
+  }
+}
