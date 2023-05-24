@@ -70,34 +70,36 @@ function AtivarCamera() {
   if (estiloDisplay === "none") {
     console.log('o display está none')
     camera.style.display = "block";
+    Quagga.init(
+      {
+        inputStream: {
+          name: "Live",
+          type: "LiveStream",
+          target: document.querySelector("#icamera"), // Or '#yourElement' (optional)
+        },
+        decoder: {
+          readers: ["code_128_reader"],
+        },
+      },
+      function (err) {
+        if (err) {
+          console.log(err);
+          return;
+        }
+        console.log("Initialization finished. Ready to start");
+        Quagga.start();
+      }
+    );
+  
+    Quagga.onDetected(function (data) {
+      document.querySelector("#codigo-barras-input").innerHTML = data.codeResult.code;
+    })
   } else {
     console.log('o display está block')
     camera.style.display = "none";
+    Quagga.stop()
   }
 
   // Selecione o elemento de input
-  Quagga.init(
-    {
-      inputStream: {
-        name: "Live",
-        type: "LiveStream",
-        target: document.querySelector("#icamera"), // Or '#yourElement' (optional)
-      },
-      decoder: {
-        readers: ["code_128_reader"],
-      },
-    },
-    function (err) {
-      if (err) {
-        console.log(err);
-        return;
-      }
-      console.log("Initialization finished. Ready to start");
-      Quagga.start();
-    }
-  );
 
-  Quagga.onDetected(function (data) {
-    document.querySelector("#codigo-barras-input").innerHTML = data.codeResult.code;
-  })
 }
