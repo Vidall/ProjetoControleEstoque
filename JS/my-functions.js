@@ -94,6 +94,8 @@ function AtivarCamera() {
     Quagga.onDetected(function (data) {
       document.querySelector("#codigo-barras-input").innerHTML = data.codeResult.code;
     })
+
+    
   } else {
     console.log('o display está block')
     camera.style.display = "none";
